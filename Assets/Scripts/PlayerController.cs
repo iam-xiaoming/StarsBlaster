@@ -13,10 +13,15 @@ public class PlayerController : MonoBehaviour
     Vector2 minBounds;
     Vector2 maxBounds;
 
+    Shooter playerShooter;
+    InputAction fireAction;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        playerShooter = GetComponent<Shooter>();
         moveAction = InputSystem.actions.FindAction("Move");
+        fireAction = InputSystem.actions.FindAction("Fire");
         InitBounds();
     }
 
@@ -31,6 +36,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         MovePlayer();
+        FireShooter();
     }
 
     void MovePlayer()
@@ -42,5 +48,10 @@ public class PlayerController : MonoBehaviour
         newPos.y = Mathf.Clamp(newPos.y, minBounds.y + lowBoundPadding, maxBounds.y - highBoundPadding);
 
         transform.position = newPos;
+    }
+
+    void FireShooter()
+    {
+        playerShooter.isFiring = fireAction.IsPressed();
     }
 }

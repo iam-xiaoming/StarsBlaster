@@ -11,13 +11,13 @@ GameObject:
   - component: {fileID: 9150659841397375823}
   - component: {fileID: 4175727188819536941}
   - component: {fileID: 2687182617436991280}
-  - component: {fileID: -6137896153351801680}
-  - component: {fileID: 3918900317673983326}
-  - component: {fileID: -6295586934205356340}
-  - component: {fileID: -1441757339323526582}
-  - component: {fileID: -3983237635595093863}
+  - component: {fileID: -1392082646294094130}
+  - component: {fileID: -6054748255833644071}
+  - component: {fileID: -9124603845351643050}
+  - component: {fileID: -2958140182044679944}
+  - component: {fileID: 6440777546663142405}
   m_Layer: 7
-  m_Name: Enemy
+  m_Name: Enemy 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -87,7 +87,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 5389405659716800493, guid: 4ca302a7f86240143b3d72d2a2644fec, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 102cd9076b1425745aefc5a3caa5173b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -110,7 +110,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PathFinding
   waveConfig: {fileID: 11400000, guid: b42af5d426b65e64e9b6acf7fae65382, type: 2}
---- !u!50 &-6137896153351801680
+--- !u!50 &-1392082646294094130
 Rigidbody2D:
   serializedVersion: 5
   m_ObjectHideFlags: 0
@@ -137,7 +137,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!58 &3918900317673983326
+--- !u!58 &-6054748255833644071
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -171,9 +171,9 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -0.0068398714}
-  m_Radius: 0.612342
---- !u!114 &-6295586934205356340
+  m_Offset: {x: 0, y: 0.059019208}
+  m_Radius: 0.6671506
+--- !u!114 &-9124603845351643050
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -186,7 +186,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DamageDealer
   damage: 10
---- !u!114 &-1441757339323526582
+--- !u!114 &-2958140182044679944
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -199,7 +199,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Heath
   heath: 50
---- !u!114 &-3983237635595093863
+--- !u!114 &6440777546663142405
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
